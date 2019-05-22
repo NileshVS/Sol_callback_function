@@ -14,7 +14,7 @@ function sub(value1,value2){
 let resultSub = sub(8,5);
 console.log(resultSub); */
 
-//call back function
+//call back function 
 
 function callBackDemo(value1,value2,funcOperation){ //created function as a parameter
     let result = funcOperation(value1,value2); //call the function which is undefined yet
@@ -26,3 +26,8 @@ let result = callBackDemo(5,2,function(value1,value2){//defined the undefined fu
 });
 console.log(result);
 
+let result2= callBackDemo(10,8,function(value1,value2){
+    return value1-value2;
+});
+
+console.log(result2);
